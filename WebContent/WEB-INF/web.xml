@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>12_23_HB_Pagination_Using_Servlet_Jsp_Maven</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>StudentServlet</display-name>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.app.servlet.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Success</display-name>
+    <servlet-name>Success</servlet-name>
+    <servlet-class>com.app.servlet.Success</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Success</servlet-name>
+    <url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DetailsServlet</display-name>
+    <servlet-name>DetailsServlet</servlet-name>
+    <servlet-class>com.app.servlet.DetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetailsServlet</servlet-name>
+    <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+</web-app>
